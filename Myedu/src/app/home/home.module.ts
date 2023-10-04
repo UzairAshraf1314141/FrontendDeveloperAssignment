@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { LayoutModule } from '../layout/layout.module';
+import { HowToSubscribeComponent } from './how-to-subscribe/how-to-subscribe.component';
 
 
 @NgModule({
@@ -12,8 +14,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    LayoutModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, HowToSubscribeComponent]
 })
 export class HomePageModule {}

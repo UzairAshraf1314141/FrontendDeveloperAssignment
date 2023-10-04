@@ -1,20 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" scroll-y="true">
+  <ion-grid class="ion-margin">
+    <ion-row class="ion-justify-content-center ion-margin-vertical">
+      <ion-col size-lg="7" size-md="7" size-sm="12" size-xs="12">
+        <ion-text class="main-text">
+          Discover the magic of our surprise box
+        </ion-text>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-row class="ion-justify-content-center ion-margin-vertical">
+      <ion-col size-lg="7" size-md="7" size-sm="12" size-xs="12">
+        <ion-text class="desc-text">
+          Unleash your child's curiosity with our educational subscription box
+          filled with fun and learning.
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ion-margin-vertical">
+      <ion-col size-lg="7" size-md="7" size-sm="12" size-xs="12">
+        <ion-button class="subscribe-now-btn" strong="true">
+          <ion-text class="ion-padding"> Subscribe Now </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row
+      class="ion-margin-vertical ion-margin-vertical ion-padding-vertical"
+    >
+      <ion-col class="ion-margin-top">
+        <ion-img
+          src="assets/images/PlaceholderImage.png"
+          class="ion-margin-top"
+        />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-how-to-subscribe></app-how-to-subscribe>
+  <app-footer></app-footer>
 </ion-content>
