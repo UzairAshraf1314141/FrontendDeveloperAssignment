@@ -1,0 +1,202 @@
+<app-header></app-header>
+<ion-content
+  [fullscreen]="true"
+  scroll-y="true"
+  class="subscription-background"
+>
+  <ion-card class="ion-padding">
+    <ion-grid>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="7" class="ion-padding-horizontal">
+            <ion-card-header>
+              <ion-card-title>Subscribe</ion-card-title>
+              <ion-card-subtitle>to our Monthly Surprise Box</ion-card-subtitle>
+            </ion-card-header>
+            <ion-item-divider></ion-item-divider>
+            <ion-list>
+              <ion-text class="ion-margin-bottom">
+                <h1>Contact Information</h1>
+              </ion-text>
+
+              <ion-label>Your Name</ion-label>
+              <ion-input
+                fill="outline"
+                placeholder="e.g Osama Alshathri"
+                class="ion-margin-bottom"
+              >
+              </ion-input>
+
+              <ion-label>Email</ion-label>
+              <ion-input
+                fill="outline"
+                placeholder="Osama@gmail.com"
+                class="ion-margin-bottom"
+              >
+              </ion-input>
+
+              <ion-text class="ion-margin-top">
+                <h1>Child’s Date of Birth</h1>
+              </ion-text>
+
+              <ion-grid lines="none" class="ion-margin-bottom no-padding">
+                <ion-row>
+                  <ion-col class="no-padding ion-margin-end">
+                    <ion-select
+                      aria-label="Date"
+                      interface="popover"
+                      placeholder="Date"
+                      fill="outline"
+                    >
+                      <ion-select-option
+                        value="{{item}}"
+                        *ngFor="let item of range(1, 32)"
+                        >{{item}}
+                      </ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                  <ion-col class="no-padding ion-margin-end">
+                    <ion-select
+                      aria-label="Month"
+                      interface="popover"
+                      placeholder="Month"
+                      fill="outline"
+                    >
+                      <ion-select-option
+                        value="{{item}}"
+                        *ngFor="let item of range(1, 13)"
+                        >{{item}}
+                      </ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                  <ion-col class="no-padding">
+                    <ion-select
+                      aria-label="Year"
+                      interface="popover"
+                      placeholder="Year"
+                      fill="outline"
+                    >
+                      <ion-select-option
+                        value="{{item}}"
+                        *ngFor="let item of years"
+                        >{{item}}
+                      </ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              <ion-label>Grade</ion-label>
+              <ion-input
+                fill="outline"
+                placeholder="e.g Grade 2"
+                class="ion-margin-bottom"
+              >
+              </ion-input>
+
+              <br />
+              <ion-grid class="no-padding">
+                <ion-row>
+                  <ion-col>
+                    <ion-label>Gender</ion-label>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col class="no-padding">
+                    <div class="checkbox-wrapper">
+                      <ion-label>Boy</ion-label>
+                      <ion-checkbox fill="outline"></ion-checkbox>
+                    </div>
+                  </ion-col>
+                  <ion-col class="no-padding ion-margin-start">
+                    <div class="checkbox-wrapper">
+                      <ion-label>Girl</ion-label>
+                      <ion-checkbox fill="outline"></ion-checkbox>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              <br />
+              <br />
+              <ion-text class="ion-margin-bottom">
+                <h1>As a parent select any 3 topics</h1>
+              </ion-text>
+
+              <ion-chip color="medium">Arabic</ion-chip>
+              <ion-chip color="medium">Islamic</ion-chip>
+              <ion-chip color="medium">English</ion-chip>
+              <ion-chip color="medium">History</ion-chip>
+              <ion-chip color="medium">Sports</ion-chip>
+              <ion-chip color="tertiary">Tertiary</ion-chip>
+            </ion-list>
+          </ion-col>
+          <ion-col size="5" class="ion-padding-horizontal left-section">
+            <ion-card-header>
+              <ion-card-title>Summary</ion-card-title>
+              <ion-card-subtitle
+                >of your Monthly Surprise Box</ion-card-subtitle
+              >
+            </ion-card-header>
+
+            <div class="mysteryBox">
+              <ion-item lines="none">
+                <ion-label>
+                  <strong>Mystery Box</strong>
+                  <ion-text class="small" color="medium">x1</ion-text><br />
+                  <div class="metadata-end-wrapper" slot="end">
+                    <ion-note>
+                      <ion-text color="medium">SAR </ion-text>
+                      <ion-text color="dark">456</ion-text> <br />
+                      <ion-text class="small">Monthly</ion-text>
+                    </ion-note>
+                  </div>
+                </ion-label>
+              </ion-item>
+            </div>
+
+            <ion-item class="transparent" lines="none">
+              <ion-label slot="start" class="invoice-label">Subtotal</ion-label>
+              <ion-label slot="end" class="invoice-value">
+                <ion-text color="medium"> SAR</ion-text> 456
+              </ion-label>
+            </ion-item>
+
+            <ion-item class="transparent" lines="none">
+              <ion-label slot="start" class="invoice-label">Shipping</ion-label>
+              <ion-label slot="end" class="invoice-value">
+                <ion-text color="medium"> Free</ion-text>
+              </ion-label>
+            </ion-item>
+
+            <ion-item class="transparent" lines="none">
+              <ion-label slot="start" class="invoice-label">Taxes</ion-label>
+              <ion-label slot="end" class="invoice-value">
+                <ion-text color="medium"> SAR</ion-text> 4.0
+              </ion-label>
+            </ion-item>
+
+            <ion-item-divider class="transparent"></ion-item-divider>
+
+            <ion-item lines="none" class="transparent">
+              <ion-label>
+                <strong>Total</strong>
+                <div class="metadata-end-wrapper" slot="end">
+                  <ion-note>
+                    <ion-text color="medium">SAR </ion-text>
+                    <ion-text color="dark">456</ion-text> <br />
+                    <ion-text class="small">Monthly</ion-text>
+                  </ion-note>
+                </div>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-grid>
+    <ion-button fill="clear" expand="block" class="footer-button"
+      >Continue to payment</ion-button
+    >
+  </ion-card>
+</ion-content>
+<app-footer></app-footer>

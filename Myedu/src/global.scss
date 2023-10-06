@@ -61,6 +61,20 @@ ion-button {
   font-weight: 900;
   line-height: 38.4px; /* 166.957% */
 }
-.float-right{
+.float-right {
   float: right;
+}
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
+
+.text-align-right {
+  text-align-last: right;
+}
+
+.text-align-center {
+  text-align: center;
 }

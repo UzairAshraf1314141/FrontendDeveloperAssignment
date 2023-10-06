@@ -1,5 +1,5 @@
 <ion-grid
-  class=" ion-margin-top"
+  class="ion-margin-top"
   [class.howToBackgroundImg]="showBackgroundImage"
   [class.howToBackground]="!showBackgroundImage"
 >
@@ -85,10 +85,14 @@
 
   <ion-row class="ion-justify-content-center ion-margin-vertical">
     <ion-col size="7">
-      <ion-button class="subscribe-now-btn" strong="true">
+      <ion-button
+        class="subscribe-now-btn"
+        strong="true"
+        routerLink="/subscription"
+        routerLinkActive="router-link-active"
+      >
         <ion-text class="ion-padding"> Subscribe Now </ion-text>
       </ion-button>
     </ion-col>
   </ion-row>
-
 </ion-grid>

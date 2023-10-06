@@ -1,0 +1,125 @@
+.subscription-background {
+  // background: #fff9e6;
+  --background: url("./../../assets/images/subscription_background.png");
+  background-repeat: no-repeat;
+  background-repeat: round;
+}
+
+ion-card {
+  width: 70%; // adjust width on your ion-card suitable on your screen
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+ion-input,
+ion-select {
+  --border-radius: 10px !important;
+  --border-color: var(--gray-300, #d0d5dd) !important;
+  --background: var(--base-white, #fff);
+  margin-top: 8px;
+
+  min-height: 44px !important;
+}
+
+h1 {
+  color: #202124;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.999px; /* 159.996% */
+}
+.checkbox-wrapper {
+  border-radius: 8px !important;
+  border: 1px solid var(--gray-300, #d0d5dd) !important;
+  background: var(--base-white, #fff) !important;
+  min-height: 44px !important;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+ion-checkbox {
+  --border-radius: 10px !important;
+  vertical-align: -webkit-baseline-middle;
+  float: right;
+}
+.footer-button {
+  --border-radius: 16px;
+  --border: 1px solid #896af9;
+  --background: var(--White, #fff);
+  --box-shadow: 4px 4px 0px -1px #896af9;
+
+  border-radius: 16px;
+  border: 1px solid #896af9;
+  background: var(--White, #fff);
+  box-shadow: 4px 4px 0px -1px #896af9;
+
+  color: #896af9;
+  justify-content: center;
+  align-items: flex-start;
+  height: 55px !important;
+}
+
+.left-section {
+  background: #f1edfe;
+}
+
+.mysteryBox {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.metadata-end-wrapper {
+  position: absolute;
+
+  top: 10px;
+  inset-inline-end: 10px;
+
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+}
+
+ion-label strong {
+  display: block;
+
+  max-width: calc(100% - 60px);
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+ion-label ion-note {
+  font-size: 0.9rem;
+}
+
+.small {
+  font-size: 12px;
+}
+
+ion-item.transparent {
+  --background: transparent;
+}
+ion-item-divider.transparent {
+  --background: transparent;
+}
+
+.invoice-label {
+  color: var(--text, #000);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Default/base */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.invoice-value {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+}
