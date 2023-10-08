@@ -11,9 +11,6 @@ export class HowToSubscribeComponent implements OnInit {
 
   ngOnInit() { }
 
-  public size700_1020 = false;
-  public size400_700 = false;
-
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.showBackgroundImage = !(window.innerWidth < 768 && window.innerHeight < 1020);
